@@ -1,0 +1,8 @@
+@import './../../containers/App.scss';
+.event {
+  max-width: 16em;
+  background: $color-app-600;
+  img {
+    max-width: 100%;
+  }
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import './event.scss';
+import market1 from './../../img/market1.jpg';
 
 const Event = () => {
   return (
-    <div className="">
+    <div className="event">
       <div className="">
-        <img alt="logo header" src="" />
+        <img alt="logo header" src={market1} />
       </div>
       <div>
         <h4>Market Berlin</h4>

@@ -6,6 +6,7 @@ import OurTeam from './OurTeam/OurTeam';
 import Products from './Products/Products';
 import PartyTime from './PartyTime/PartyTime';
 import Contact from './Contact/Contact';
+import Events from './Events/Events';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Products />
         <PartyTime />
         <Contact />
+        <Events />
       </body>
     </div>
   );
