@@ -5,10 +5,10 @@ import Team from './../../img/team.JPG';
 const OurTeam = () => {
   return (
     <div className="ourTeam">
-      <div className="">
+      <div className="ourTeam__picture">
         <img alt="logo header" src={Team} />
       </div>
-      <div>
+      <div className="ourTeam__info">
         <h4>Our team</h4>
         <p>
           We are a happy and open minded German-Mexican couple on a quest to
@@ -21,7 +21,7 @@ const OurTeam = () => {
           rehydrate and recharge with our "aguas frescas", refreshing and tasty
           lemonades with real fruit, herbs and just a little bit of sweetener
           And on cold, dark winterdays pamper yourself with one of our "atoles",
-          which feels like liquid happiness, bringing cosiness and joy.{' '}
+          which feels like liquid happiness, bringing cosiness and joy.
         </p>
       </div>
     </div>

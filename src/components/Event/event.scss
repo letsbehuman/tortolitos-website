@@ -2,7 +2,10 @@
 .event {
   max-width: 16em;
   background: $color-app-600;
+  border-radius: 1.5em;
+
   img {
     max-width: 100%;
+    border-radius: 1.5em 1.5em 0 0;
   }
 }

@@ -7,6 +7,7 @@ import Products from './Products/Products';
 import PartyTime from './PartyTime/PartyTime';
 import Contact from './Contact/Contact';
 import Events from './Events/Events';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <PartyTime />
         <Contact />
         <Events />
+        <Footer />
       </body>
     </div>
   );

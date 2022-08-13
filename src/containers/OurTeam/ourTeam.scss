@@ -2,3 +2,18 @@
   display: flex;
   gap: 2em;
 }
+.ourTeam__picture {
+  width: 50%;
+  img {
+    max-width: 100%;
+    height: 100%; //!
+  }
+}
+.ourTeam__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  max-width: 23em;
+  gap: 1em;
+  padding: 3em;
+}
