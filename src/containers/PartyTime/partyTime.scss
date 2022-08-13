@@ -1,0 +1,25 @@
+@import './../App.scss';
+.partyTime {
+  display: flex;
+  background-color: $color-app-900;
+
+  .bg-party--1 {
+    width: 100%;
+    background: url('./../../img/party-time.png') no-repeat;
+    background-size: cover;
+  }
+  .bg-party--2 {
+    width: 100%;
+    background: url('./../../img/party-time2.png') no-repeat;
+    background-size: cover;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    padding: 4em;
+    max-width: 20em;
+    justify-content: space-between;
+    text-align: center;
+  }
+}

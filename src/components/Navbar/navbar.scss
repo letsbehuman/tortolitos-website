@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  width: 100%;
+
+  // background-color: antiquewhite;
+  height: 8em;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    list-style: none;
+  }
+}

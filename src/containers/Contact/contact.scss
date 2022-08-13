@@ -1,0 +1,13 @@
+@import './../App.scss';
+.contact {
+  display: flex;
+  padding: 2em 1em;
+  .contact-us {
+    background-color: $color-app-900;
+    width: 20em;
+  }
+  .form {
+    width: 20em;
+    background-color: $color-app-600;
+  }
+}

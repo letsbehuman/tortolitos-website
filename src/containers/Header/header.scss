@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  background: url('./../../img/home.png') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 50em;
+    height: auto;
+  }
+}

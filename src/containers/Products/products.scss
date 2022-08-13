@@ -1,0 +1,10 @@
+@import './../App.scss';
+
+.products {
+  display: flex;
+  background: $color-app-800;
+  height: 35em;
+  gap: 1em;
+  padding: 4em 8em;
+  justify-content: space-around;
+}

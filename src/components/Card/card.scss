@@ -1,0 +1,17 @@
+@import './../../containers/App.scss';
+
+.card-container {
+  display: flex;
+  padding: 1.5em;
+  flex-direction: column;
+  width: 16em;
+  align-items: center;
+  background: $color-app-400;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 1.2em;
+  img {
+    height: 20em;
+    border-radius: 1em;
+  }
+}
