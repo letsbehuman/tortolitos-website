@@ -1,12 +1,13 @@
 import React from 'react';
 import './header.scss';
-import LogoHeader from './../../img/logoheader.png';
+import Logo from './../../img/logoheader.png';
+import Isologo from './../../img/logonav.png';
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logoHeader">
-        <img alt="logo header" src={LogoHeader} />
+        <img alt="logo header" src={Logo} />
       </div>
     </div>
   );

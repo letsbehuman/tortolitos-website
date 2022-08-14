@@ -1,32 +1,117 @@
 @import './../../containers/App.scss';
-.nav {
+.navbarItems {
   position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  height: 8em;
-  img {
-    margin-top: 2em;
-    margin-left: 1em;
-    height: 90%;
-    align-self: center;
-    background-color: rgba($color: #ffffff, $alpha: 0.3);
-    border-radius: 50%;
+
+  .navbar-logo {
+    margin: 1em; // padding: 1em;
+    .isologo {
+      // display: none;
+      height: 7em;
+      align-self: center;
+      background-color: rgba($color: #ffffff, $alpha: 0.3);
+      border-radius: 50%;
+    }
+    .logo {
+      display: none;
+    }
   }
 
-  ul {
+  .nav-menu {
     display: flex;
-    justify-content: space-between;
-    margin: 1em 2em;
     gap: 1em;
-    height: 3em;
-    align-items: center;
-  }
-  li {
-    display: flex;
     list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+    margin-right: 2em;
+    margin-top: 1em;
+  }
+  .nav-links {
+    display: flex;
+    min-width: max-content;
+    text-decoration: none;
     background-color: rgba($color: $color-app-600, $alpha: 0.7);
     padding: 0.8em;
     border-radius: 0.4em;
+    &:hover {
+      background-color: rgba($color: $color-app-600, $alpha: 1);
+    }
+  }
+  .menu-icon {
+    display: none;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .navbarItems {
+    justify-content: center;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    .fa-bars {
+      top: 5em;
+      color: $color-app-600;
+      cursor: pointer;
+      font-size: 2rem;
+    }
+    .fa-times {
+      font-size: 2.5rem;
+      color: $color-app-600;
+      cursor: pointer;
+    }
+    .menu-icon {
+      padding-top: 1.5em;
+    }
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      // width: 100%;
+      position: absolute;
+      top: 7em;
+      right: -100%;
+
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+      display: flex;
+      right: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+    .nav-links {
+      justify-content: center;
+      text-align: center;
+      padding: 2em;
+      width: 100%;
+      display: table;
+      &:hover {
+        background-color: rgba($color: $color-app-600, $alpha: 1);
+        border-radius: 0.4em;
+      }
+    }
+    .navbar-logo {
+      margin: 1em;
+      height: 6em;
+      // position: absolute;
+      top: 0;
+      left: 0;
+      .isologo {
+        display: none;
+      }
+      .logo {
+        display: flex;
+        height: 6em;
+      }
+    }
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+    }
+  }
+} ;
