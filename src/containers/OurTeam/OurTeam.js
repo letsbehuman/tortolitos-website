@@ -6,7 +6,7 @@ const OurTeam = () => {
   return (
     <div className="ourTeam">
       <div className="ourTeam__picture">
-        <img alt="logo header" src={Team} />
+        {/* <img alt="team" src={Team} /> */}
       </div>
       <div className="ourTeam__info">
         <h4>Our team</h4>

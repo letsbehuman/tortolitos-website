@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './navbar.scss';
 import Isologo from './../../img/logonav.png';
-import Logo from './../../img/logoheader.png';
+import Logo from './../../img/logoNavbar.png';
 
 import { MenuItems } from './MenuItems';
 

@@ -48,7 +48,8 @@
 @media screen and (max-width: 700px) {
   .navbarItems {
     justify-content: center;
-    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    height: 7em;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
     .fa-bars {
       top: 5em;
       color: $color-app-600;
@@ -114,4 +115,9 @@
       transform: translate(-100%, 60%);
     }
   }
-} ;
+}
+@media screen and (max-width: 440px) {
+  .navbarItems {
+    justify-content: flex-start;
+  }
+}

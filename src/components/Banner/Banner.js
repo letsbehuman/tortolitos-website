@@ -4,7 +4,7 @@ import './banner.scss';
 const Banner = () => {
   return (
     <div className="banner">
-      <h3>Vegan drinks and Treats</h3>
+      <h3>Vegan drinks and treats</h3>
     </div>
   );
 };
