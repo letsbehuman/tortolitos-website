@@ -1,6 +1,5 @@
 import React from 'react';
 import './ourTeam.scss';
-import Team from './../../img/team.JPG';
 
 const OurTeam = () => {
   return (

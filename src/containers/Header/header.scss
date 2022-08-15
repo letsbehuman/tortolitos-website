@@ -24,6 +24,7 @@
   }
   .logoHeader {
     display: flex;
+    padding-inline: 0;
     justify-content: center;
     background: url('./../../img/9920.png') center no-repeat;
     background-size: cover;
@@ -36,9 +37,8 @@
       display: none;
     }
     .isologo {
-      margin: 0;
       display: block;
-      height: 100%;
+      width: auto;
     }
   }
 }

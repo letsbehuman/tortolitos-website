@@ -5,7 +5,6 @@
   margin: 2em 0;
 }
 .ourTeam__picture {
-  border: solid red 1px;
   background-image: url('./../../img/team.JPG');
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +15,6 @@
   // }
 }
 .ourTeam__info {
-  border: solid 1px green;
   display: flex;
   flex-direction: column;
   padding: 1em 3em 1em 1em;

@@ -1,26 +1,25 @@
 import React from 'react';
 import './card.scss';
-import donas from './../../img/donas.png';
+import image from '../../img/donas.png';
 
-const Card = () => {
+const Card = (item) => {
   return (
     <div className="card-container">
       <div className="image">
-        <img src={donas} />
-      </div>
-      <div className="product-type">
-        <h5>Aguas frescas</h5>
-      </div>
-      <div className="product-title">
-        <h3>100% natural & delicious</h3>
+        <img src={item.url} alt="product"></img>
       </div>
       <div className="product-info">
-        <p>
-          Tasty lemonades made of real fruit and herbs - healthy and refreshing
-          for hot days
-        </p>
+        <div className="product-type">
+          <h5>{item.title}</h5>
+        </div>
+        <div className="product-title">
+          <h3>{item.header}</h3>
+        </div>
+        <div className="product-details">
+          <p>{item.description}</p>
+        </div>
+        <button className="product-more">Read more</button>
       </div>
-      <button className="product-more">Read more</button>
     </div>
   );
 };

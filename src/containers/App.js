@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Banner />
         <OurTeam />
-        {/* <Products /> */}
+        <Products />
         <PartyTime />
         <Contact />
         <Events />

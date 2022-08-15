@@ -2,9 +2,18 @@
 
 .products {
   display: flex;
+  justify-content: center;
   background: $color-app-800;
-  height: 35em;
-  gap: 1em;
-  padding: 4em 8em;
-  justify-content: space-around;
+  height: 36em;
+  margin: 2em 0;
+  padding: 4em 6em;
+  .products__container {
+    display: flex;
+    gap: 2em;
+    border: solid red 1px;
+    max-width: 1000px;
+    // height: 100%;
+    gap: 1em;
+    justify-content: space-around;
+  }
 }

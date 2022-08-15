@@ -1,17 +1,32 @@
 @import './../../containers/App.scss';
 
 .card-container {
-  display: flex;
-  padding: 1.5em;
-  flex-direction: column;
-  width: 16em;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  // padding: 1.5em 0;
+  max-width: 25em;
   align-items: center;
   background: $color-app-400;
+  border: red solid 1px;
   text-align: center;
   justify-content: space-between;
   border-radius: 1.2em;
+}
+.image {
+  // background-color: black;
+  height: 100%;
+  padding-top: 1em;
+  border: solid red 1px;
+
   img {
-    height: 20em;
-    border-radius: 1em;
+    max-height: 100%;
   }
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1em;
+  width: 15em;
+  min-width: 8em;
 }
