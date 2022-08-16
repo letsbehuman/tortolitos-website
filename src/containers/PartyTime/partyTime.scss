@@ -1,46 +1,50 @@
 @import './../App.scss';
 .partyTime {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: $color-app-900;
   height: 24em;
 
   .bg-party--1 {
-    background: url('./../../img/party-time.png') no-repeat;
-    background-size: cover;
+    background: url('./../../img/party-time1.jpg') no-repeat;
+    background-size: 40%;
+    background-position: left;
+    background-attachment: fixed;
   }
   .bg-party--2 {
-    width: 100%;
-    background: url('./../../img/party-time2.png') no-repeat;
-    background-size: cover;
+    background: url('./../../img/party-time2.jpg') no-repeat;
+    background-size: 50%;
+    background-position: right;
+    background-attachment: fixed;
   }
   .info {
     display: flex;
     flex-direction: column;
     height: 15em;
     padding: 2em;
-    max-width: 20em;
+    min-width: 20em;
+    align-self: center;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    button {
-      width: 12em;
-      padding: 0.5em;
-      border: none;
-      border-radius: 0.5em;
-    }
   }
 }
 @media screen and (max-width: 700px) {
   .partyTime {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
+    height: auto;
     .bg-party--1 {
       display: none;
     }
+    .bg-party--2 {
+      background-size: 100%;
+      background-position: center top;
+    }
     .info {
       justify-self: center;
-      width: 100%;
+      width: 80%;
+      padding-bottom: 1em;
     }
   }
 }

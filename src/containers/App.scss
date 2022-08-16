@@ -20,3 +20,15 @@ $color-btn: #8e6ff6;
 h1 {
   font-size: 2em;
 }
+input,
+textarea {
+  border: none;
+  background-color: rgba($color: #e8e8e8, $alpha: 0.7);
+  padding: 1em;
+
+  border-radius: 0.5em;
+  &:focus {
+    background-color: rgba($color: #e8e8e8, $alpha: 0.9);
+    outline: none;
+  }
+}

@@ -1,14 +1,53 @@
 @import './../App.scss';
 .contact {
-  display: flex;
-  margin: 2em 0;
-  height: 36em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4em 0;
+  height: 30em;
+  max-width: 60em;
+  padding: 2em;
+  margin-inline: auto;
+
   .contact-us {
     background-color: $color-app-900;
-    width: 20em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em 0 0 2em;
+  }
+  .form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    background-color: green;
+    border-radius: 0 2em 2em 0;
   }
   .form {
-    width: 20em;
-    background-color: $color-app-600;
+    display: grid;
+
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    width: 100%;
+
+    .email {
+      grid-column: 2/3;
+    }
+    .subject,
+    textarea {
+      grid-column: 1/3;
+    }
+    button {
+      grid-column: 1 /3;
+      // height: 3em;
+    }
+    .textarea {
+      min-height: 7em;
+    }
   }
 }

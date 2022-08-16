@@ -1,0 +1,18 @@
+@import './../../containers/App.scss';
+.event {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  max-width: 22em;
+  background: $color-app-600;
+  border-radius: 1.5em;
+  img {
+    max-width: 100%;
+    border-radius: 1.5em 1.5em 0 0;
+  }
+}
+// @media screen and (max-width: 990px) {
+//   .card__container {
+//     transform: scale(0.9);
+//     transition: all 1s ease-in-out;
+//   }
+// }

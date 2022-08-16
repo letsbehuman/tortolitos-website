@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from '../../components/CardProduct/Card';
+import Card from '../../components/CardProduct/CardProduct';
 import './products.scss';
 import { productsList } from './productsList';
 

@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './events.scss';
-import Event from './../../components/Event/Event';
+import EventCard from './../../components/Event/EventCard';
+import { eventList } from './eventList';
 
-const Events = () => {
-  return (
-    <div className="events">
-      <Event />
-      <Event />
-      <Event />
-    </div>
-  );
-};
+class Events extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <div className="events">
+        {eventList.map((item, index) => {
+          return <EventCard key={index} {...item} />;
+        })}
+      </div>
+    );
+  }
+}
 export default Events;

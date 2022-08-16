@@ -2,6 +2,10 @@ import React from 'react';
 import './contact.scss';
 // import Team from './../../img/team.JPG';
 
+// document.querySelector('.form__btn').addEventListener('click', function (e) {
+//   console.log(e.target);
+// });
+
 const Contact = () => {
   return (
     <div className="contact">
@@ -10,16 +14,19 @@ const Contact = () => {
         <p>Berlin, Germany</p>
         <div className="line"></div>
       </div>
-      <div className="form">
-        <form>
-          <input type="text" placeholder="Name"></input>
-          <input type="text" placeholder="Email"></input>
-          <input type="text" placeholder="Subject"></input>
-          <input type="text" placeholder="Type your message here..."></input>
+      <div className="form__container">
+        <form className="form">
+          <input type="text" className="name" placeholder="Name"></input>
+          <input type="text" className="email" placeholder="Email"></input>
+          <input type="text" className="subject" placeholder="Subject"></input>
+          <textarea
+            type="text"
+            className="textarea"
+            placeholder="Type your message here..."
+          ></textarea>
+          <button className="form__btn">Submit</button>
         </form>
-        <button>Submit</button>
       </div>
-      <div className="bg-party--2"></div>
     </div>
   );
 };
