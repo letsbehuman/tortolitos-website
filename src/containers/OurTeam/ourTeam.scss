@@ -3,12 +3,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   margin: 2em 0;
+  height: 36em;
 }
 .ourTeam__picture {
   background-image: url('./../../img/team.JPG');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  // background-attachment: fixed;
+  background-position: left;
   // img {
   //   max-width: 100%;
   //   // height: 100%; //!
@@ -18,6 +20,7 @@
   display: flex;
   flex-direction: column;
   padding: 1em 3em 1em 1em;
+  max-width: 35em;
 
   gap: 1em;
 }
