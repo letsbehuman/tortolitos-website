@@ -20,7 +20,7 @@ const CardProduct = (item) => {
         <div className="product__details">
           <p>{item.description}</p>
         </div>
-        <button className="product__more">Read more</button>
+        <button className="product__more">{'Read more'}</button>
       </div>
     </div>
   );

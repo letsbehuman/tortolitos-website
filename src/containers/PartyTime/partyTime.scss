@@ -32,22 +32,28 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .partyTime {
+    height: auto;
+    .bg-party--1,
+    .bg-party--2 {
+      background-attachment: local;
+      background-size: cover;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .partyTime {
+    display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
-    height: auto;
-    .bg-party--1 {
+    height: 33em;
+    .bg-party--2 {
       display: none;
     }
-    .bg-party--2 {
-      background-size: 100%;
-      background-position: center top;
-    }
     .info {
-      justify-self: center;
-      width: 80%;
-      padding-bottom: 1em;
+      height: 15em;
+      padding: 1em 2em;
     }
   }
 }

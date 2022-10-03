@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './events.scss';
 import EventCard from './../../components/Event/EventCard';
 import { eventList } from '../../utils/eventList';

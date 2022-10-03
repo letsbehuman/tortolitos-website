@@ -6,7 +6,6 @@
   height: 25em;
   border-radius: 2em;
   overflow: hidden;
-
   position: relative;
   .event__picture {
     border-radius: 2em 2em 0 0;
@@ -14,7 +13,7 @@
   }
   .event__info {
     position: absolute;
-    bottom: 0em;
+    bottom: 0;
     background: $color-green;
     padding: 1em;
     height: 10em;
@@ -22,8 +21,6 @@
     grid-template-rows: 3em 2em auto;
     align-items: center;
     transform: translateY(40%);
-  }
-  .extra-info {
   }
 
   &:hover {
@@ -34,9 +31,19 @@
   }
 }
 
-// @media screen and (max-width: 990px) {
-//   .card__container {
-//     transform: scale(0.9);
-//     transition: all 1s ease-in-out;
-//   }
-// }
+@media screen and (max-width: 670px) {
+  .event {
+    width: 47%;
+    height: 22em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .event {
+    width: 90%;
+    height: 22em;
+  }
+  .event__info {
+    width: 100%;
+    transform: translateY(20%);
+  }
+}
