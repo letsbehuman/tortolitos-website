@@ -1,0 +1,12 @@
+@import './../../containers/App.scss';
+
+.footer {
+  display: flex;
+  background-color: black;
+  height: 4em;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+  }
+}

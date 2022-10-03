@@ -2,17 +2,17 @@
 .partyTime {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: $color-app-900;
+  background-color: $color-blue;
   height: 24em;
 
   .bg-party--1 {
-    background: url('./../../img/party-time1.jpg') no-repeat;
+    background: url('../../../public/img/party-time1.jpg') no-repeat;
     background-size: 40%;
     background-position: left;
     background-attachment: fixed;
   }
   .bg-party--2 {
-    background: url('./../../img/party-time2.jpg') no-repeat;
+    background: url('../../../public/img/party-time2.jpg') no-repeat;
     background-size: 50%;
     background-position: right;
     background-attachment: fixed;
@@ -20,13 +20,16 @@
   .info {
     display: flex;
     flex-direction: column;
-    height: 15em;
-    padding: 2em;
+    height: 100%;
+    padding: 4em 2em;
     min-width: 20em;
     align-self: center;
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    button {
+      @include buttonStyle;
+    }
   }
 }
 @media screen and (max-width: 700px) {

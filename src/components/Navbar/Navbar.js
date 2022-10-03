@@ -1,47 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './navbar.scss';
-import Isologo from './../../img/logonav.png';
-import Logo from './../../img/logoNavbar.png';
+// import Isologo from './../../img/logonav.png';
+// import Logo from './../../img/logoNavbar.png';
 
-import { MenuItems } from './MenuItems';
-
-class Navbar extends Component {
-  constructor() {
-    super();
-
-    this.state = { clicked: false };
-  }
-
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
-
-  render() {
-    return (
-      <nav className="navbarItems">
-        <a className="navbar-logo" href="#Home">
-          <img alt="logo" className="logo" src={Logo} />
-          <img alt="logo" className="isologo" src={Isologo} />
-        </a>
-        <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}
-          ></i>
-        </div>
-        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    );
-  }
-}
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <a className="navbar-logo" href="/#home">
+        <img alt="logo" className="logo" src="/img/logonav.png" />
+        <img alt="logo" className="isologo" src="img/logonav.png" />
+      </a>
+      <ul className="nav-links">
+        <li>
+          <a className="nav-link" href="/#team">
+            <span className="non-essencial">Our</span>team
+          </a>
+        </li>
+        <li>
+          <a className="nav-link" href="/#products">
+            <span className="non-essencial">Our</span>stuff
+          </a>
+        </li>
+        <li>
+          <a className="nav-link" href="/#party-time">
+            Party<span className="non-essencial">time</span>
+          </a>
+        </li>
+        <li>
+          <a className="nav-link" href="/#contact">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a className="nav-link" href="/#events">
+            Events
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;

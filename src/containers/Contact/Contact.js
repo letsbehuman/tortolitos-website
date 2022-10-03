@@ -1,18 +1,18 @@
 import React from 'react';
 import './contact.scss';
-// import Team from './../../img/team.JPG';
-
-// document.querySelector('.form__btn').addEventListener('click', function (e) {
-//   console.log(e.target);
-// });
+import videoBg from '../../assets/bg_video.mp4';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-us">
-        <h3>CONTACT US</h3>
-        <p>Berlin, Germany</p>
-        <div className="line"></div>
+        <div className="contact-us__info">
+          <h3>{'CONTACT US'}</h3>
+          <p>{'Berlin, Germany'}</p>
+        </div>
+        <div className="background_video">
+          <video src={videoBg} autoPlay loop muted></video>
+        </div>
       </div>
       <div className="form__container">
         <form className="form">
@@ -24,7 +24,7 @@ const Contact = () => {
             className="textarea"
             placeholder="Type your message here..."
           ></textarea>
-          <button className="form__btn">Submit</button>
+          <button className="form__btn">{'Submit'}</button>
         </form>
       </div>
     </div>

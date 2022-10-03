@@ -1,8 +1,13 @@
 @import './../../containers/App.scss';
-.navbarItems {
+.navbar {
   position: fixed;
   display: flex;
   width: 100%;
+  right: 0;
+  left: 0;
+  max-width: 80em;
+  margin: auto;
+  // border: solid 1px blue;
   justify-content: space-between;
   z-index: 100;
 
@@ -20,30 +25,45 @@
     }
   }
 
-  .nav-menu {
-    display: flex;
-    gap: 1em;
-    list-style: none;
-    text-align: center;
-    width: 50vw;
-    justify-content: end;
-    margin-right: 2em;
-    margin-top: 1em;
-  }
   .nav-links {
     display: flex;
-    min-width: max-content;
-    text-decoration: none;
-    background-color: rgba($color: $color-app-600, $alpha: 0.7);
-    padding: 0.8em;
+    // min-width: 33em;
+    justify-content: space-between;
     border-radius: 0.4em;
+    // border: solid red 1px;
+    align-items: center;
+  }
+  .nav-link {
+    background-color: rgba($color: $color-pink, $alpha: 0.7);
+    font-size: 1.3rem;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    margin: 1em;
+    font-family: $font-title;
+
     &:hover {
-      background-color: rgba($color: $color-app-600, $alpha: 1);
+      background-color: rgba($color: $color-pink, $alpha: 1);
+    }
+    .non-essencial {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: $font-non-essencial;
     }
   }
   .menu-icon {
     display: none;
   }
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+  margin-right: 2em;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 700px) {
@@ -53,13 +73,13 @@
     background-color: rgba($color: #ffffff, $alpha: 0.5);
     .fa-bars {
       top: 5em;
-      color: $color-app-600;
+      color: white;
       cursor: pointer;
       font-size: 2rem;
     }
     .fa-times {
       font-size: 2.5rem;
-      color: $color-app-600;
+      color: white;
       cursor: pointer;
     }
     .menu-icon {
@@ -90,7 +110,7 @@
       width: 100%;
       display: table;
       &:hover {
-        background-color: rgba($color: $color-app-600, $alpha: 1);
+        background-color: rgba($color: $color-green, $alpha: 1);
         border-radius: 0.4em;
       }
     }

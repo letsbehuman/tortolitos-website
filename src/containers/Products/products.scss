@@ -3,11 +3,16 @@
 .products {
   display: flex;
   justify-content: center;
-  background: $color-app-800;
+  background: $color-green;
   height: 36em;
   margin: 2em 0;
   padding: 2em 4em;
   // border: solid red 1px;
+  .image {
+    background-size: cover;
+    border-radius: 1em 1em 0 0;
+    background-position: center;
+  }
   .products__container {
     display: flex;
     gap: 3vw;

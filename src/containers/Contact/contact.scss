@@ -2,21 +2,43 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 4em 0;
-  height: 30em;
+  margin: 4em auto;
   max-width: 60em;
   padding: 2em;
-  margin-inline: auto;
+  justify-content: center;
 
   .contact-us {
-    background-color: $color-app-900;
+    position: relative;
+    border-radius: 2.6em 0 0 2.6em;
+    border: solid 10px $color-orange;
+  }
+  .background_video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  video {
+    border-radius: 2em 0 0 2em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact-us__info {
+    background-color: rgba($color: $color-brown, $alpha: 0.7);
+    z-index: 1;
+    position: absolute;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 2em 0 0 2em;
+    color: $color-beige;
+    text-shadow: 1px 1px black;
+    h3 {
+      letter-spacing: 3px;
+    }
   }
   .form__container {
     display: flex;
@@ -24,12 +46,11 @@
     align-items: center;
     width: 100%;
     padding: 2em;
-    background-color: green;
+    background-color: $color-orange;
     border-radius: 0 2em 2em 0;
   }
   .form {
     display: grid;
-
     height: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 0.5em;
@@ -39,12 +60,12 @@
       grid-column: 2/3;
     }
     .subject,
-    textarea {
+    .textarea {
       grid-column: 1/3;
     }
     button {
       grid-column: 1 /3;
-      // height: 3em;
+      @include buttonStyle;
     }
     .textarea {
       min-height: 7em;

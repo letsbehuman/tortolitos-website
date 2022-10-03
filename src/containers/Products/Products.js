@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from '../../components/CardProduct/CardProduct';
 import './products.scss';
-import { productsList } from './productsList';
+import { productsList } from '../../utils/productsList';
 
-class Products extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-  render() {
-    return (
-      <div className="products">
-        <div className="products__container">
-          {productsList.map((item, index) => {
-            return <Card key={index} {...item} />;
-          })}
-        </div>
+const Products = () => {
+  return (
+    <div className="products" id="products">
+      <div className="products__container">
+        {productsList.map((item, index) => {
+          return <Card key={index} {...item} />;
+        })}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 export default Products;

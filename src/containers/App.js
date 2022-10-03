@@ -1,4 +1,5 @@
 import './App.scss';
+import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Header from './Header/Header';
 import Banner from '../components/Banner/Banner';
@@ -7,22 +8,20 @@ import Products from './Products/Products';
 import PartyTime from './PartyTime/PartyTime';
 import Contact from './Contact/Contact';
 import Events from './Events/Events';
-import Footer from './Footer/Footer';
+import Footer from '../components/Footer/Footer';
 
 function App() {
   return (
     <div className="">
-      <body>
-        <Navbar />
-        <Header />
-        <Banner />
-        <OurTeam />
-        <Products />
-        <PartyTime />
-        <Contact />
-        <Events />
-        <Footer />
-      </body>
+      <Navbar />
+      <Header />
+      <Banner />
+      <OurTeam />
+      <Products />
+      <PartyTime />
+      <Contact />
+      <Events />
+      <Footer />
     </div>
   );
 }

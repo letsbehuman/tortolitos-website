@@ -1,34 +1,71 @@
 //* VARIABLES
-$color-app-900: #ede6db;
-$color-app-800: #eddfb3;
-$color-app-600: #76ba99;
-$color-app-400: #ca955c;
-$color-app-200: #876445;
-$color-primary: #8e6ff6;
+$color-beige: #faf1e6;
+$color-yellow: #eddfb3;
+$color-green: #b6c867;
+$color-orange: #ffc074;
+$color-pink: #ff9999;
+$color-brown: #876445;
+// $color-brown: #b49c73;
+$color-blue: #01937c;
 
-$tc-400: #8e6ff6;
-$tc-600: #8e6ff6;
-$tc-800: #8e6ff6;
+$tc-400: #f9fce1;
+$tc-600: #b49c73;
+$tc-800: #565d47;
 
 $color-btn-hover: #8e6ff6;
 $color-btn: #8e6ff6;
-//*
 
+@mixin buttonStyle {
+  background-color: $color-yellow;
+  border-radius: 1em;
+  border: none;
+}
+// $font-non-essencial: 'Montserrat Alternates', sans-serif;
+// $font-non-essencial: 'Amatic SC', cursive;
+$font-non-essencial: 'Advent Pro', sans-serif;
+$font-title: 'Peralta', cursive;
+$font-text: 'Signika Negative', sans-serif;
+
+//*
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7em;
+}
 .App {
   text-align: center;
+  background-color: $color-beige;
 }
-h1 {
-  font-size: 2em;
+
+h1,
+h2,
+h3 {
+  font-family: $font-title;
+}
+h4,
+h5,
+p,
+a {
+  font-family: $font-text;
+}
+p {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 input,
 textarea {
   border: none;
-  background-color: rgba($color: #e8e8e8, $alpha: 0.7);
-  padding: 1em;
-
+  background-color: rgba($color: white, $alpha: 0.7);
+  padding: 0.3em 0.6em;
   border-radius: 0.5em;
   &:focus {
-    background-color: rgba($color: #e8e8e8, $alpha: 0.9);
+    background-color: rgba($color: white, $alpha: 0.9);
     outline: none;
   }
 }

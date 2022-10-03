@@ -1,5 +1,5 @@
 import React from 'react';
-import './card.scss';
+import './cardProduct.scss';
 
 const CardProduct = (item) => {
   return (
@@ -8,8 +8,6 @@ const CardProduct = (item) => {
         className="image"
         style={{
           backgroundImage: `url(${item.url})`,
-          backgroundSize: 'cover',
-          borderRadius: '1em 1em 0 0 ',
         }}
       ></div>
       <div className="product__info">
