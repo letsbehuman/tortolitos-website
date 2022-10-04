@@ -10,135 +10,79 @@
   // border: solid 1px blue;
   justify-content: space-between;
   z-index: 100;
-
-  .navbar-logo {
-    margin: 1em; // padding: 1em;
-    .isologo {
-      // display: none;
-      height: 7em;
-      align-self: center;
-      background-color: rgba($color: #ffffff, $alpha: 0.3);
-      border-radius: 50%;
-    }
-    .logo {
-      display: none;
-    }
+}
+.navbar-logo {
+  margin: 1em; // padding: 1em;
+  .isologo {
+    // display: none;
+    height: 7em;
+    align-self: center;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border-radius: 50%;
   }
-
-  .nav-links {
-    display: flex;
-    // min-width: 33em;
-    justify-content: space-between;
-    border-radius: 0.4em;
-    // border: solid red 1px;
-    align-items: center;
-  }
-  .nav-link {
-    background-color: rgba($color: $color-pink, $alpha: 0.7);
-    font-size: 1.3rem;
-    padding: 0.5em;
-    border-radius: 0.3em;
-    margin: 1em;
-    font-family: $font-title;
-
-    &:hover {
-      background-color: rgba($color: $color-pink, $alpha: 1);
-    }
-    .non-essencial {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-family: $font-non-essencial;
-    }
-  }
-  .menu-icon {
+  .logo {
     display: none;
   }
 }
 
-.nav-menu {
+.nav-links {
   display: flex;
-  gap: 1em;
-  list-style: none;
-  text-align: center;
-  justify-content: flex-end;
-  margin-right: 2em;
-  margin-top: 1em;
+  // min-width: 33em;
+  justify-content: space-between;
+  border-radius: 0.4em;
+  // border: solid red 1px;
+  align-items: center;
 }
+.nav-link {
+  background-color: rgba($color: $color-pink, $alpha: 0.7);
+  font-size: 1.3rem;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  margin: 1em;
+  font-family: $font-title;
 
-@media screen and (max-width: 700px) {
-  .navbarItems {
-    justify-content: center;
-    height: 7em;
-    background-color: rgba($color: #ffffff, $alpha: 0.5);
-    .fa-bars {
-      top: 5em;
-      color: white;
-      cursor: pointer;
-      font-size: 2rem;
-    }
-    .fa-times {
-      font-size: 2.5rem;
-      color: white;
-      cursor: pointer;
-    }
-    .menu-icon {
-      padding-top: 1.5em;
-    }
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      // width: 100%;
-      position: absolute;
-      top: 7em;
-      right: -100%;
-
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-    .nav-menu.active {
-      display: flex;
-      right: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-    }
-    .nav-links {
-      justify-content: center;
-      text-align: center;
-      padding: 2em;
-      width: 100%;
-      display: table;
-      &:hover {
-        background-color: rgba($color: $color-green, $alpha: 1);
-        border-radius: 0.4em;
-      }
-    }
-    .navbar-logo {
-      margin: 1em;
-      height: 6em;
-      // position: absolute;
-      top: 0;
-      left: 0;
-      .isologo {
-        display: none;
-      }
-      .logo {
-        display: flex;
-        height: 6em;
-      }
-    }
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-    }
+  &:hover {
+    background-color: rgba($color: $color-pink, $alpha: 1);
+  }
+  .non-essencial {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-non-essencial;
   }
 }
-@media screen and (max-width: 440px) {
-  .navbarItems {
-    justify-content: flex-start;
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-link {
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-right: 2em;
+    border: none;
+    background-color: rgba($color: $color-pink, $alpha: 0.7);
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar-logo {
+    .isologo {
+      display: none;
+    }
+    .logo {
+      display: block;
+      height: 6.8em;
+    }
   }
 }
