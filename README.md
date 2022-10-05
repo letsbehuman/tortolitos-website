@@ -1,6 +1,6 @@
 # Tortolitos Website
 
-Vegan drinks and treats [see the demo] (playful-alfajores-0e8038.netlify.app/)
+Vegan drinks and treats [playful-alfajores-0e8038.netlify.app/] (see demo)
 
 Tortolitos was a project to bring to Berlin some of the Mexican drinks and sweets with a little twist because all the products are vegan.
 Part of our products include hot beverages, our "Atoles" and for the summer you can cool with our "Aguas Frescas".
