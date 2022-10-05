@@ -14,3 +14,4 @@ Things to improve:
 - Optimize images
 - Implement Back-end
 - Product description pages
+- Clean Styles
